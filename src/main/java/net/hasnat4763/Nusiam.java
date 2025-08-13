@@ -2,6 +2,7 @@ package net.hasnat4763;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.hasnat4763.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +12,7 @@ public class Nusiam implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItems.registerModItems();
 
 	}
 }
