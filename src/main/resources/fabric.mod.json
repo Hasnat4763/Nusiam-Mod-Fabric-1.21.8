@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "nusiam",
+	"version": "${version}",
+	"name": "Nusiam",
+	"description": "Nusiam is a mythical ore with supernatural power",
+	"authors": [
+		"Hasnat4763"
+	],
+	"contact": {
+		"homepage": "https://hasnat4763.me",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/nusiam/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.hasnat4763.Nusiam"
+		],
+		"fabric-datagen": [
+			"net.hasnat4763.NusiamDataGenerator"
+		],
+		"client": [
+			"net.hasnat4763.NusiamModClient"
+		]
+
+	},
+	"mixins": [
+		"nusiam.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
