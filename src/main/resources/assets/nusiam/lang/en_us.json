@@ -1,5 +1,8 @@
 {
-  "item.nusiam.nusiam": "Nusiam",
+  "item.nusiam.nusiam_ingot": "Nusiam Ingot",
   "item.nusiam.raw_nusiam": "Raw Nusiam",
-  "item.nusiam.nusiam_ore": "Nusiam Ore"
+  "block.nusiam.nusiam_ore": "Nusiam Ore",
+  "item.nusiam.nusiam_ore": "Nusiam Ore",
+  "itemgroup.nusiam.nusiam_mod" : "Nusiam",
+  "item.nusiam.nobel_prize" : "Nobel Prize"
 }

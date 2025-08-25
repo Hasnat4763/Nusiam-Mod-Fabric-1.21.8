@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "nusiam:item/nusiam"
+    "model": "nusiam:item/nusiam_ore"
   }
 }

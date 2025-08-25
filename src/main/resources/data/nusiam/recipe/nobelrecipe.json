@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "gNg",
+    "ggg"
+  ],
+  "key": {
+    "#": "minecraft:gold_block",
+    "g": "nusiam:nusiam_ingot",
+    "N": "minecraft:nether_star"
+  },
+  "result": {
+    "id": "nusiam:nobel_prize",
+    "count": 1
+  }
+}

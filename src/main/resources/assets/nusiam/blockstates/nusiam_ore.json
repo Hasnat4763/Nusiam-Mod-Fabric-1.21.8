@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "nusiam:block/nusiam_ore"
+    }
+  }
+}

@@ -19,22 +19,13 @@ import java.util.function.Function;
 public class ModBlocks {
 
     public static final Block NUSIAM_ORE = registerBlock("nusiam_ore", Block::new,
-            AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.COPPER),
-            true);
+            AbstractBlock.Settings.create().strength(1.5f).requiresTool().sounds(BlockSoundGroup.STONE), true);
 
-    private static Block registerBlock(String name, Function<AbstractBlock.Settings, Block> blockFactory, AbstractBlock.Settings settings, boolean shouldRegisterItem) {
-        // Create a registry key for the block
+    private static Block registerBlock(String name, Function<AbstractBlock.Settings, Block> blockFactory, AbstractBlock.Settings settings, Boolean shouldRegisterItem) {
         RegistryKey<Block> blockKey = keyOfBlock(name);
-        // Create the block instance
         Block block = blockFactory.apply(settings.registryKey(blockKey));
-
-        // Sometimes, you may not want to register an item for the block.
-        // Eg: if it's a technical block like `minecraft:moving_piston` or `minecraft:end_gateway`
         if (shouldRegisterItem) {
-            // Items need to be registered with a different type of registry key, but the ID
-            // can be the same.
             RegistryKey<Item> itemKey = keyOfItem(name);
-
             BlockItem blockItem = new BlockItem(block, new Item.Settings().registryKey(itemKey));
             Registry.register(Registries.ITEM, itemKey, blockItem);
         }

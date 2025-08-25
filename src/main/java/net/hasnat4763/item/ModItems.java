@@ -16,8 +16,9 @@ import static net.hasnat4763.Nusiam.MOD_ID;
 
 
 public class ModItems {
-    public static final Item NUSIAM = registerItem("nusiam", Item::new, new Item.Settings());
+    public static final Item NUSIAM_INGOT = registerItem("nusiam_ingot", Item::new, new Item.Settings());
     public static final Item RAW_NUSIAM = registerItem("raw_nusiam", Item::new, new Item.Settings());
+    public static final Item NOBEL_PRIZE = registerItem("nobel_prize", Item::new, new Item.Settings());
 
 
     public static Item registerItem(String name, Function<Item.Settings, Item> itemFactory, Item.Settings settings) {
@@ -36,8 +37,9 @@ public class ModItems {
     public static void registerModItems() {
         Nusiam.LOGGER.info("Register mod items for " + MOD_ID);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries->{
-            entries.add(NUSIAM);
+            entries.add(NUSIAM_INGOT);
             entries.add(RAW_NUSIAM);
+            entries.add(NOBEL_PRIZE);
         });
     }
 

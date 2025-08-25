@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": "nusiam:raw_nusiam",
+  "result": {
+    "id": "nusiam:nusiam_ingot"
+  },
+  "experience": 20,
+  "cookingtime": 300,
+  "group": "raw_nusiam"
+}
