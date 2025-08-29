@@ -5,6 +5,8 @@ import net.fabricmc.api.ModInitializer;
 import net.hasnat4763.block.ModBlocks;
 import net.hasnat4763.item.ModItemGroup;
 import net.hasnat4763.item.ModItems;
+import net.hasnat4763.item.ModToolMaterial;
+import net.hasnat4763.sound.ModSounds;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,6 +19,7 @@ public class Nusiam implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModItemGroup.RegisterItemGroup();
+		ModSounds.registerSounds();
 
 	}
 }

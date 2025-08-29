@@ -1,0 +1,21 @@
+{
+  "nusiam_ore_break": {
+    "subtitle": "sounds.nusiam.nusiam_ore_break",
+    "sounds":  [
+      "nusiam:nusiam_ore_break"
+
+    ]
+  },
+  "nusiam_ore_hit": {
+    "subtitle": "sounds.nusiam.nusiam_ore_hit",
+    "sounds":  [
+      "nusiam:nusiam_ore_hit"
+    ]
+  },
+  "nusiam_ore_fall": {
+    "subtitle": "sounds.nusiam.nusiam_ore_fall",
+    "sounds":  [
+      "nusiam:nusiam_ore_fall"
+    ]
+  }
+}

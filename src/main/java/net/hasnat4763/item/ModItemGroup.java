@@ -9,8 +9,8 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
-
 import static net.hasnat4763.Nusiam.MOD_ID;
+
 
 public class ModItemGroup {
     public static final ItemGroup NUSIAM_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -22,6 +22,15 @@ public class ModItemGroup {
                         entries.add(ModItems.RAW_NUSIAM);
                         entries.add(ModBlocks.NUSIAM_ORE);
                         entries.add(ModItems.NOBEL_PRIZE);
+                        entries.add(ModItems.NUSIAM_SWORD);
+                        entries.add(ModItems.NUSIAM_PICKAXE);
+                        entries.add(ModItems.NUSIAM_AXE);
+                        entries.add(ModItems.NUSIAM_HOE);
+                        entries.add(ModItems.NUSIAM_SHOVEL);
+                        entries.add(ModItems.NUSIAM_HELMET);
+                        entries.add(ModItems.NUSIAM_LEGGINGS);
+                        entries.add(ModItems.NUSIAM_BOOTS);
+                        entries.add(ModItems.NUSIAM_CHESTPLATE);
                         })
                     .build());
 

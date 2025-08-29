@@ -2,6 +2,7 @@ package net.hasnat4763.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.hasnat4763.Nusiam;
+import net.hasnat4763.sound.ModSounds;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
@@ -11,15 +12,16 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
-import net.minecraft.sound.BlockSoundGroup;
+
 import net.minecraft.util.Identifier;
 
 import java.util.function.Function;
 
+
 public class ModBlocks {
 
     public static final Block NUSIAM_ORE = registerBlock("nusiam_ore", Block::new,
-            AbstractBlock.Settings.create().strength(1.5f).requiresTool().sounds(BlockSoundGroup.STONE), true);
+            AbstractBlock.Settings.create().strength(2.5f).requiresTool().sounds(ModSounds.NUSIAM_SOUNDS), true);
 
     private static Block registerBlock(String name, Function<AbstractBlock.Settings, Block> blockFactory, AbstractBlock.Settings settings, Boolean shouldRegisterItem) {
         RegistryKey<Block> blockKey = keyOfBlock(name);

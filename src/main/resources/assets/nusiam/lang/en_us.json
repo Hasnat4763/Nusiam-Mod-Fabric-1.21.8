@@ -4,5 +4,19 @@
   "block.nusiam.nusiam_ore": "Nusiam Ore",
   "item.nusiam.nusiam_ore": "Nusiam Ore",
   "itemgroup.nusiam.nusiam_mod" : "Nusiam",
-  "item.nusiam.nobel_prize" : "Nobel Prize"
+  "item.nusiam.nobel_prize" : "Nobel Prize",
+  "sounds.nusiam.nusiam_ore_break": "Nusiam Ore Break",
+  "sounds.nusiam.nusiam_ore_hit": "Nus got hurt :(",
+  "sounds.nusiam.nusiam_ore_fall": "Khelega Free Fire?",
+
+  "item.nusiam.nusiam_sword": "Nusiam Sword",
+  "item.nusiam.nusiam_pickaxe": "Nusiam Pickaxe",
+  "item.nusiam.nusiam_axe": "Nusiam Axe",
+  "item.nusiam.nusiam_hoe": "Nusiam Hoe",
+  "item.nusiam.nusiam_shovel": "Nusiam Shovel",
+
+  "item.nusiam.nusiam_helmet": "Nusiam Helmet",
+  "item.nusiam.nusiam_chestplate": "Nusiam Chestplate",
+  "item.nusiam.nusiam_leggings": "Nusiam Leggings",
+  "item.nusiam.nusiam_boots": "Nusiam Boots"
 }
