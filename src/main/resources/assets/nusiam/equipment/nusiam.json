@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "nusiam:nusiam_armor"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "nusiam:nusiam_armor"
+      }
+    ]
+  }
+}

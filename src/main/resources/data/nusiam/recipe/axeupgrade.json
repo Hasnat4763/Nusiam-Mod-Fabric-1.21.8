@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "nusiam:nobel_prize",
+  "base": "minecraft:netherite_axe",
+  "result": {
+    "id": "nusiam:nusiam_axe",
+    "count": 1
+  }
+}

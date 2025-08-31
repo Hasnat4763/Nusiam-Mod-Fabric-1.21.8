@@ -18,5 +18,8 @@
   "item.nusiam.nusiam_helmet": "Nusiam Helmet",
   "item.nusiam.nusiam_chestplate": "Nusiam Chestplate",
   "item.nusiam.nusiam_leggings": "Nusiam Leggings",
-  "item.nusiam.nusiam_boots": "Nusiam Boots"
+  "item.nusiam.nusiam_boots": "Nusiam Boots",
+
+
+  "itemTooltip.nusiam.nobel_prize": "Nobel Prize What else?"
 }

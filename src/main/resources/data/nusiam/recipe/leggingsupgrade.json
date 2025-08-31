@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "nusiam:nobel_prize",
+  "base": "minecraft:netherite_leggings",
+  "result": {
+    "id": "nusiam:nusiam_leggings",
+    "count": 1
+  },
+  "template": "minecraft:netherite_upgrade_smithing_template"
+}

@@ -6,9 +6,9 @@
     "ggg"
   ],
   "key": {
-    "#": "minecraft:gold_block",
+    "#": "minecraft:diamond",
     "g": "nusiam:nusiam_ingot",
-    "N": "minecraft:nether_star"
+    "N": "minecraft:netherite_ingot"
   },
   "result": {
     "id": "nusiam:nobel_prize",
