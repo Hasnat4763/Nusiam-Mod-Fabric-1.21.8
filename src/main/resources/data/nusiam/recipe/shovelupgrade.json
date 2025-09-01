@@ -5,6 +5,5 @@
   "result": {
     "id": "nusiam:nusiam_shovel",
     "count": 1
-  },
-  "template": "minecraft:netherite_upgrade_smithing_template"
+  }
 }
