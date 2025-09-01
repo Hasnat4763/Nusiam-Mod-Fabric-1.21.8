@@ -1,16 +1,14 @@
 package net.hasnat4763.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.hasnat4763.ModArmorItem;
 import net.hasnat4763.Nusiam;
 import net.minecraft.item.*;
 import net.minecraft.item.equipment.EquipmentType;
-import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
-import net.minecraft.text.Text;
-import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 
@@ -22,7 +20,7 @@ import java.util.function.Function;
 import static net.hasnat4763.Nusiam.MOD_ID;
 
 
-public class ModItems {
+public class ModItems extends Items {
 
     public static final Item NUSIAM_INGOT = registerItem("nusiam_ingot",
             Item::new,
@@ -65,26 +63,26 @@ public class ModItems {
 
     public static final Item NUSIAM_HELMET = registerItem(
             "nusiam_helmet",
-            Item::new,
-            new Item.Settings().armor(ModArmorMaterial.NUSIAM_ARMOR_MATERIAL, EquipmentType.HELMET).rarity(Rarity.EPIC)
+            settings -> new ModArmorItem(settings.armor(ModArmorMaterial.NUSIAM_ARMOR_MATERIAL, EquipmentType.HELMET).rarity(Rarity.EPIC)),
+            new Item.Settings()
     );
 
     public static final Item NUSIAM_CHESTPLATE = registerItem(
             "nusiam_chestplate",
-            Item::new,
-            new Item.Settings().armor(ModArmorMaterial.NUSIAM_ARMOR_MATERIAL, EquipmentType.CHESTPLATE).rarity(Rarity.EPIC)
+            settings -> new ModArmorItem(settings.armor(ModArmorMaterial.NUSIAM_ARMOR_MATERIAL, EquipmentType.CHESTPLATE).rarity(Rarity.EPIC)),
+            new Item.Settings()
     );
 
     public static final Item NUSIAM_LEGGINGS = registerItem(
             "nusiam_leggings",
-            Item::new,
-            new Item.Settings().armor(ModArmorMaterial.NUSIAM_ARMOR_MATERIAL, EquipmentType.LEGGINGS).rarity(Rarity.EPIC)
+            settings -> new ModArmorItem(settings.armor(ModArmorMaterial.NUSIAM_ARMOR_MATERIAL, EquipmentType.LEGGINGS).rarity(Rarity.EPIC)),
+            new Item.Settings()
     );
 
     public static final Item NUSIAM_BOOTS = registerItem(
             "nusiam_boots",
-            Item::new,
-            new Item.Settings().armor(ModArmorMaterial.NUSIAM_ARMOR_MATERIAL, EquipmentType.BOOTS).rarity(Rarity.EPIC)
+            settings -> new ModArmorItem(settings.armor(ModArmorMaterial.NUSIAM_ARMOR_MATERIAL, EquipmentType.BOOTS).rarity(Rarity.EPIC)),
+            new Item.Settings()
     );
 
 
@@ -95,7 +93,6 @@ public class ModItems {
         Registry.register(Registries.ITEM, itemKey, item);
         return item;
     }
-
     public static void registerModItems() {
         Nusiam.LOGGER.info("Register mod items for " + MOD_ID);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries->{
@@ -108,9 +105,10 @@ public class ModItems {
             entries.add(NUSIAM_HOE);
             entries.add(NUSIAM_SHOVEL);
             entries.add(NUSIAM_HELMET);
+            entries.add(NUSIAM_CHESTPLATE);
             entries.add(NUSIAM_LEGGINGS);
             entries.add(NUSIAM_BOOTS);
-            entries.add(NUSIAM_CHESTPLATE);
+
         });
     }
 

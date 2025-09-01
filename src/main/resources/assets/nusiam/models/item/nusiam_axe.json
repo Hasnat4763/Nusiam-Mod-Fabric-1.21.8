@@ -3,6 +3,6 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:item/handheld",
 	"textures": {
-		"layer0": "nusiam:item/nusiam_pickaxe"
+		"layer0": "nusiam:item/nusiam_axe"
 	}
 }

@@ -28,9 +28,9 @@ public class ModItemGroup {
                         entries.add(ModItems.NUSIAM_HOE);
                         entries.add(ModItems.NUSIAM_SHOVEL);
                         entries.add(ModItems.NUSIAM_HELMET);
+                        entries.add(ModItems.NUSIAM_CHESTPLATE);
                         entries.add(ModItems.NUSIAM_LEGGINGS);
                         entries.add(ModItems.NUSIAM_BOOTS);
-                        entries.add(ModItems.NUSIAM_CHESTPLATE);
                         })
                     .build());
 

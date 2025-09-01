@@ -3,6 +3,8 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:item/generated",
 	"textures": {
-		"layer0": "nusiam:item/nusiam_chestplate"
+		"1": "nusiam:block/nusiam_ore",
+		"layer0": "nusiam:item/nusiam_chestplate",
+		"particle": "nusiam:block/nusiam_ore"
 	}
 }
